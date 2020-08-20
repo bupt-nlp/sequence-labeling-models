@@ -2,6 +2,11 @@
 
 we will share our research model at here. 
 
-## models
+## BiLSTM CRF
 
-- [Bert-CRF](./pytorch/bert-crf-ner/README.md)
+![](./bilstm_crf/imgs/model.png)
+
+
+## Bert CRF
+
+![](./bert_crf/imgs/bert_crf.png)
