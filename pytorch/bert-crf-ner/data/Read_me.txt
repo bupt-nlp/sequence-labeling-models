@@ -1,0 +1,9 @@
+当前的数据总共包含以下几份文件：
+（1）train_base.json是原始训练集，包含质押、股份股权转让、投资、起诉和减持五个类别；
+（2）dev_base.json是原始验证集；
+（3）trans_train.json是A榜迁移训练集，包含收购和判决这两个类别；
+（4）trans_dev.json是A榜迁移验证集。
+注意：
+（1）选手需要根据train_base.json和trans_train.json做模型训练，然后在dev_base.json和trans_dev.json做模型推断。
+其中，dev_base.json的类别为质押、股份股权转让、投资、起诉和减持，trans_dev.json的类别为收购和判决。选手将两份预测结果合并，提交到平台即可。
+（2）担保、中标和签署合同这几个迁移事件的少量训练样本，会在最终评测的时候才放出。
