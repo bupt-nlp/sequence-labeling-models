@@ -22,18 +22,15 @@ def read_line(line: str) -> Union[List[str], List[str]]:
 
     labels = []
 
-    labels.append(f'B-{label}')
     if len(tokens) == 1:
-        return tokens, labels
-    if len(tokens) == 2:
-        labels.append(f'E-{label}')
-        return tokens, labels
+        return tokens, [f'S-{label}']
+
+    labels.append(f'B-{label}')
 
     for i in range(1, len(tokens)-1):
-        labels.append(f'I-{label}')
+        labels.append(f'M-{label}')
     labels.append(f'E-{label}')
     assert len(labels) == len(tokens)
-
     return tokens, labels 
     
 
@@ -73,6 +70,6 @@ def convert_bmes_to_sequence_tagging(source_file: str, output_file: str):
 
             items = [
                 '###'.join([tokens[i], sentence_labels[i]]) for i in range(len(tokens))]
-                
+
             f.write('\t'.join(items) + '\n')
       
