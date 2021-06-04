@@ -1,2 +1,4 @@
 allennlp
 dataclasses-json
+loguru
+typed-argument-parser
