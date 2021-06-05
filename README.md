@@ -1,37 +1,9 @@
 # sequence-labeling-models  
 [![Join the chat at https://gitter.im/bupt-nlp/sequence-labeling-models](https://badges.gitter.im/bupt-nlp/sequence-labeling-models.svg)](https://gitter.im/bupt-nlp/sequence-labeling-models?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-we will share our research model at here. 
+## Experiments
 
-## All of things you should do
 
-- Install
-
-```shell
-pip install -r requirements.txt
-```
-
-- Process your data to the file format
-
-> this is the sequence labeling task model, so if you process your data to the file format, you can fed the file to our model at free. And the model will return the specific format file to you. The following is the format of the input file
-
-```shell
-token1 token2 token3 ... tokenn\tlabel1 label2 label3 ... labeln
-```
-
-- Complete configuration
-
-```shell
-python main.py \
-    --do_train=True \
-    --do_eval=True \
-    --do_predict=True \
-    --input_file=data.train \
-    --output_file=data.train.result \
-    --batch_size=10 \
-    --lr=5e-5 \
-    --hidden_size=768 \
-```
 
 ## BiLSTM CRF
 
