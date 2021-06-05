@@ -68,7 +68,29 @@ class TaggerTrainer:
         # 3. init the model
         self.model = self.init_model()
         self.trainer = self.init_trainer()
+    
+    def init_crf_model(self) -> Model:
+        """init crf tagger model
+        """
+        # 1. import related modules
+        from allennlp
+        bert_text_field_embedder = PretrainedTransformerEmbedder(model_name=self.config.model_name)
+        bert_text_field_embedder
+        tagger = SimpleTagger(
+            vocab=self.vocab,
+            text_field_embedder=BasicTextFieldEmbedder(
+                token_embedders={
+                    'tokens': bert_text_field_embedder
+                }
+            ),
+            encoder=PassThroughEncoder(bert_text_field_embedder.get_output_dim()),
+            verbose_metrics=True,
+            calculate_span_f1=True,
+            label_encoding="BMES",
+        )
         
+        tagger.to(device=self.config.device)
+        return tagger
     
     def init_model(self) -> Model:
         """build the model
