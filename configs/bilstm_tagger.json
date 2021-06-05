@@ -1,0 +1,38 @@
+
+{
+  "dataset_reader": {
+    "type": "sequence_tagging"
+  },
+  "train_data_path": "data/weibo/train.corpus",
+  "validation_data_path": "data/weibo/dev.corpus",
+  "test_data_path": "data/weibo/test.corpus",
+  "model": {
+    "type": "simple_tagger",
+    "text_field_embedder": {
+      "token_embedders": {
+        "tokens": {
+          "type": "pretrained_transformer",
+          "model_name": "bert-base-chinese"
+        }
+      }
+    },
+    "encoder": {
+        "type": "pass_through",
+        "input_dim": 768
+    },
+    "label_encoding": "BMES"
+  },
+  "data_loader": {
+    "batch_size": 16,
+    "shuffle": true
+  },
+  "trainer": {
+    "num_epochs": 1,
+    "cuda_device": 1,
+    "grad_clipping": 5.0,
+    "validation_metric": "+accuracy",
+    "optimizer": {
+      "type": "adagrad"
+    }
+  }
+}
