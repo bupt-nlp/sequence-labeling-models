@@ -4,6 +4,7 @@ import json
 from typing import List, Union
 from allennlp.data.dataset_readers.sequence_tagging import DEFAULT_WORD_TAG_DELIMITER
 
+from src.schema import TextClassificationExample
 
 def read_line(line: str) -> Union[List[str], List[str]]: 
     """extract tokens&labels from one line<bmes>
@@ -97,3 +98,15 @@ def convert_two_array_to_text_classification_corpus(source_file: str, output_fil
     # 2. save example items to target file
     with open(output_file, 'w+', encoding='utf-8') as f:
         f.write('\n'.join(json_items))
+
+def read_text_classification_examples(file: str) -> List[TextClassificationExample]:
+    examples = []
+    with open(file, 'r', encoding='utf-8') as f:
+        for line in f:
+            example = TextClassificationExample.from_json(line)
+            examples.append(example)
+    return examples
+
+
+def convert_text_classification_examples_to_excel_file(file: str):
+    pass

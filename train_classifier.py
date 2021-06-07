@@ -25,6 +25,7 @@ from allennlp.data import (
     Vocabulary,
 )
 from allennlp.data.data_loaders import SimpleDataLoader
+from allennlp.data.tokenizers.pretrained_transformer_tokenizer import PretrainedTransformerTokenizer
 from allennlp.models import Model
 from allennlp.models.basic_classifier import BasicClassifier
 from allennlp.modules.seq2vec_encoders.cls_pooler import ClsPooler
@@ -39,13 +40,14 @@ class Config(Tap):
     device: int = 1
     
     model_name: str = 'hfl/chinese-bert-wwm-ext'
-    train_file: str = './data/weibo/train.corpus'
-    dev_file: str = './data/weibo/dev.corpus'
-    test_file: str = './data/weibo/dev.corpus'
+    train_file: str = './data/banking/intent-classification/banking77_train.json.corpus'
+    dev_file: str = './data/banking/intent-classification/banking77_test.json.corpus'
+    test_file: str =  './data/banking/intent-classification/banking77_test.json.corpus'
     
-    batch_size: int = 32
-    epoch: int = 20
-    lr: float = 0.005
+    batch_size: int = 8
+    epoch: int = 100
+    lr: float = 1e-5
+    classifier_lr: float = 0.001
     
 
 class TaggerTrainer:
@@ -53,7 +55,11 @@ class TaggerTrainer:
         self.config: Config = Config().parse_args(known_only=True)
         
         bert_token_indexers = PretrainedTransformerIndexer(model_name=self.config.model_name)
-        reader = SequenceTaggingDatasetReader(token_indexers={"tokens": bert_token_indexers})
+        bert_tokenizer = PretrainedTransformerTokenizer(model_name=self.config.model_name)
+        reader = TextClassificationJsonReader(
+            token_indexers={"tokens": bert_token_indexers}, 
+            tokenizer=bert_tokenizer
+        )
 
         train_instances = list(reader.read(self.config.train_file))
         dev_instances = list(reader.read(self.config.dev_file))
@@ -95,7 +101,19 @@ class TaggerTrainer:
     
     def init_trainer(self) -> Trainer:
         parameters = [(n, p) for n, p in self.model.named_parameters() if p.requires_grad]
-        optimizer = AdamOptimizer(parameters, lr=self.config.lr)  # type: ignore
+        
+        group_parameter_group = [(
+            ['_text_field_embedder.*'], {'lr': self.config.lr}
+        ), (
+            ['_classification_layer.*'], {'lr': self.config.classifier_lr}
+        )]
+
+        optimizer = AdamOptimizer(
+            parameters, 
+            parameter_groups=group_parameter_group, 
+            lr=self.config.lr
+        )  # type: ignore
+
         trainer = GradientDescentTrainer(
             model=self.model,
             serialization_dir='./output',
