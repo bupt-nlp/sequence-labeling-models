@@ -1,0 +1,53 @@
+{"text": "How to record my screen?", "label": "none"}
+{"text": "How can I highlight or annotate PDFs?", "label": "none"}
+{"text": "Is it worth upgrading from 12.04 LTS to 13.04", "label": "make_update"}
+{"text": "Upgrade to 12.04 64 bit", "label": "make_update"}
+{"text": "How to upgrade Ubuntu 14.04.1 to 14.04.2?", "label": "make_update"}
+{"text": "Upgrading from Ubuntu 14.04 to 15.04", "label": "make_update"}
+{"text": "how to upgrade from ubuntu 15.04 to 15.10?", "label": "make_update"}
+{"text": "Upgrade 12.04 to 12.10 using startup disk", "label": "make_update"}
+{"text": "How to Upgrade from 11.10 to 12.04 when you've got a problem?", "label": "make_update"}
+{"text": "Update 11.04 to 12.04 with LiveCD", "label": "make_update"}
+{"text": "How to upgrade Ubuntu 9.10 to 12.10 via terminal?", "label": "make_update"}
+{"text": "How to upgrade from Ubuntu 10.10 to 11.04?", "label": "make_update"}
+{"text": "No matter what I do Ubuntu 15.04 does not recognize HP LaserJet 1020", "label": "setup_printer"}
+{"text": "How to setup HP printer/scanner on ubuntu?", "label": "setup_printer"}
+{"text": "How do I setup my HP C4140 printer wirelessly?", "label": "setup_printer"}
+{"text": "How to setup wireless printing from a printer connected via usb on Ubuntu Server 12.10?", "label": "setup_printer"}
+{"text": "How can I install a Pantum 2502W laser printer on Ubuntu", "label": "setup_printer"}
+{"text": "Install Canon MP560 Ubuntu 15.04", "label": "setup_printer"}
+{"text": "How to install a Brother MFC-5890CN network printer?", "label": "setup_printer"}
+{"text": "How do I install drivers for a Konica Minolta 200?", "label": "setup_printer"}
+{"text": "How do I install drivers for the Panasonic MB1900CX All-in-One Printer/Scanner?", "label": "setup_printer"}
+{"text": "How To Install Canon LBP2900B printer in 14.04 LTS ? I tried the method for LBP2900 but it didnt work", "label": "setup_printer"}
+{"text": "Any command line calculator for Ubuntu?", "label": "software_recommendation"}
+{"text": "Extracting embedded images from a PDF", "label": "software_recommendation"}
+{"text": "What to use to quickly cut Audio/Video", "label": "software_recommendation"}
+{"text": "Torrent client for the command-line?", "label": "none"}
+{"text": "MySQL GUI Tools", "label": "software_recommendation"}
+{"text": "What developer text editors are available for Ubuntu?", "label": "software_recommendation"}
+{"text": "What screenshot tools are available?", "label": "software_recommendation"}
+{"text": "Which programs can I use to edit PDF files?", "label": "software_recommendation"}
+{"text": "Is there a lightweight tool to crop images quickly?", "label": "software_recommendation"}
+{"text": "What IRC clients are available?", "label": "software_recommendation"}
+{"text": "What new games are available for Ubuntu in 2011?", "label": "software_recommendation"}
+{"text": "UPNP / DLNA (client) player recommendations?", "label": "software_recommendation"}
+{"text": "What scientific plotting software is available?", "label": "software_recommendation"}
+{"text": "Can you recommend a password generator?", "label": "software_recommendation"}
+{"text": "What tools do you use to monitor a web server?", "label": "software_recommendation"}
+{"text": "What is a good MongoDB GUI client?", "label": "software_recommendation"}
+{"text": "Password Management Applications?", "label": "software_recommendation"}
+{"text": "Is there an application for reading mobi files?", "label": "software_recommendation"}
+{"text": "shut down without extra question", "label": "shutdown_computer"}
+{"text": "How to shutdown computer when users are logged on?", "label": "shutdown_computer"}
+{"text": "What is the proper terminal-way to shutdown?", "label": "shutdown_computer"}
+{"text": "How can I automatically shutdown the system after a specific time?", "label": "shutdown_computer"}
+{"text": "Hotkey to shut down from login screen?", "label": "shutdown_computer"}
+{"text": "How to shutdown the computer after Xsession ends?", "label": "shutdown_computer"}
+{"text": "How can one shutdown a PC using the keyboard?", "label": "shutdown_computer"}
+{"text": "How can I enable shutdown verbosity?", "label": "shutdown_computer"}
+{"text": "Are there any Keyboard Shortcuts to Shutdown?", "label": "shutdown_computer"}
+{"text": "Shutdown after a certain time", "label": "shutdown_computer"}
+{"text": "Shutdown problem in Ubuntu 16.04", "label": "shutdown_computer"}
+{"text": "How do I fix a shutdown problem?", "label": "shutdown_computer"}
+{"text": "What graphical utility can I use for Ubuntu auto shutdown?", "label": "shutdown_computer"}

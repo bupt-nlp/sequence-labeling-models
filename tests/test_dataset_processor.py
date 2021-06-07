@@ -30,7 +30,7 @@ from allennlp.models import Model
 from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
 from allennlp.training.optimizers import AdamOptimizer
 
-from utils.dataset_processor import read_line, convert_bmes_to_sequence_tagging
+from utils.dataset_processor import read_line, convert_bmes_to_sequence_tagging, convert_two_array_to_text_classification_corpus
 
 
 def test_read_line():
@@ -125,6 +125,25 @@ def build_trainer(
         optimizer=optimizer,
     )
     return trainer
+
+def test_ask_ubuntu_corpus():
+    base_dirs = [
+        './data/ask_ubuntu/intent-classification',
+        './data/banking/intent-classification',
+        './data/chatbot/intent-classification',
+       './data/clinc/intent-classification', 
+       './data/hwu/intent-classification',
+       './data/web_applications/intent-classification',
+    ]
+    for base_dir in base_dirs:
+        for file in os.listdir(base_dir):
+            if file.endswith('.corpus'):
+                continue
+            file_path = os.path.join(base_dir, file)
+            convert_two_array_to_text_classification_corpus(
+                file_path
+            )
+        
 
 if __name__ == "__main__":
     test_sequence_tagging_reader()

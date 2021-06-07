@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from typing import List, Union
 from allennlp.data.dataset_readers.sequence_tagging import DEFAULT_WORD_TAG_DELIMITER
 
@@ -72,4 +73,27 @@ def convert_bmes_to_sequence_tagging(source_file: str, output_file: str):
                 '###'.join([tokens[i], sentence_labels[i]]) for i in range(len(tokens))]
 
             f.write('\t'.join(items) + '\n')
-      
+
+def convert_two_array_to_text_classification_corpus(source_file: str, output_file: str = None):
+    """ convert two array example data to text classification corpus
+
+    Args:
+        source_file (str): source of courpus file
+        output_file (str, optional): the target corpus file. Defaults to None.
+    """
+    if not output_file:
+        output_file = source_file + '.corpus'
+    
+    # 1. load source file data
+    json_items: List[str] = []
+    with open(source_file, 'r', encoding='utf-8') as f:
+        examples = json.load(f)
+        for example_items in examples:
+            assert len(example_items) == 2
+            json_items.append(
+                json.dumps(dict(text=example_items[0], label=example_items[1]))
+            )
+    
+    # 2. save example items to target file
+    with open(output_file, 'w+', encoding='utf-8') as f:
+        f.write('\n'.join(json_items))

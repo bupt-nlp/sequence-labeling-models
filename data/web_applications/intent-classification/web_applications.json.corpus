@@ -1,0 +1,89 @@
+{"text": "How do I download a YouTube video?", "label": "download_video"}
+{"text": "How do I change my password on TV Tropes?", "label": "change_password"}
+{"text": "Why can't I change my password and login with Skype?", "label": "change_password"}
+{"text": "Change subject line in new Gmail compose window", "label": "none"}
+{"text": "Email Google Form daily?", "label": "none"}
+{"text": "How can I export track.scrobble data from last.fm?", "label": "export_data"}
+{"text": "How can I backup my wordpress.com hosted blog?", "label": "export_data"}
+{"text": "How can I sync my Yahoo! Calendar with Google Calendar?", "label": "sync_accounts"}
+{"text": "Google Bookmarks and Chrome Bookmark Sync -- Different?", "label": "sync_accounts"}
+{"text": "How do I sync my RunKeeper workout schedule with Google Calender?", "label": "sync_accounts"}
+{"text": "Does using Gmail's \"Never send it to Spam\" filter mean I can't train their spam filter?", "label": "filter_spam"}
+{"text": "Correctly Identifying Spam Messages", "label": "filter_spam"}
+{"text": "Twitter and Echofon spam", "label": "filter_spam"}
+{"text": "Totally Blocking Spam To Gmail Account", "label": "filter_spam"}
+{"text": "Discarding spam mail faster in Gmail", "label": "filter_spam"}
+{"text": "Stopping spam emails in Gmail by pattern", "label": "filter_spam"}
+{"text": "Alternatives for Google Reader (with Android synchronizing)", "label": "find_alternative"}
+{"text": "Bugmenot (registration bypasser) alternative that doesn't suck?", "label": "find_alternative"}
+{"text": "Alternatives to Twitter", "label": "find_alternative"}
+{"text": "Google search engine alternatives", "label": "find_alternative"}
+{"text": "Alternatives to Google Groups with more features?", "label": "find_alternative"}
+{"text": "Are there any good Veoh or Youtube alternatives?", "label": "find_alternative"}
+{"text": "Mint alternatives for Canada", "label": "find_alternative"}
+{"text": "How can I delete my Twitter account?", "label": "delete_account"}
+{"text": "How do I delete my LinkedIn account?", "label": "delete_account"}
+{"text": "How do I delete my Gmail account?", "label": "delete_account"}
+{"text": "How do I delete my Experts Exchange account?", "label": "delete_account"}
+{"text": "How do I delete my Ohloh profile?", "label": "delete_account"}
+{"text": "How can I permanently delete my MySpace account?", "label": "delete_account"}
+{"text": "How to disable/delete a Harvest account?", "label": "delete_account"}
+{"text": "Alternative to Facebook", "label": "find_alternative"}
+{"text": "How do I delete my Facebook account?", "label": "delete_account"}
+{"text": "Are there any good Pandora alternatives with general availability outside the US?", "label": "find_alternative"}
+{"text": "Is it possible to export my data from Trello to back it up?", "label": "export_data"}
+{"text": "Is there an online alternative to iGoogle", "label": "find_alternative"}
+{"text": "How can I remove myself from a Trello organization?", "label": "delete_account"}
+{"text": "How do I transfer my photos from Flickr to Picasa?", "label": "export_data"}
+{"text": "How do I sync Google Calendar with my Outlook Calendar?", "label": "sync_accounts"}
+{"text": "Archive/export all the blog entries from a RSS feed in Google Reader", "label": "export_data"}
+{"text": "How can I delete my 160by2 account?", "label": "delete_account"}
+{"text": "How can I permanently delete my Yahoo mail account?", "label": "delete_account"}
+{"text": "Deleting an account(website) from Google Analytics?", "label": "delete_account"}
+{"text": "How to delete my imgur account?", "label": "delete_account"}
+{"text": "How to change my Uber password or delete the account?", "label": "delete_account"}
+{"text": "How to delete a Sify Mail account", "label": "delete_account"}
+{"text": "How to permanently delete a 37signals ID", "label": "delete_account"}
+{"text": "How can I delete my Hunch account?", "label": "delete_account"}
+{"text": "Any alternatives to Google Apps for your domain?", "label": "find_alternative"}
+{"text": "Evernote alternative", "label": "find_alternative"}
+{"text": "Alternatives to LibraryThing", "label": "find_alternative"}
+{"text": "What are the alternatives to Facebook/Meetup for Event Planning", "label": "find_alternative"}
+{"text": "Is there a free and privacy-aware alternative to Google?", "label": "find_alternative"}
+{"text": "What alternatives to Google Product Search exist?", "label": "find_alternative"}
+{"text": "Photo Sharing Site (alternative to flickr) supporting OpenID sign in?", "label": "find_alternative"}
+{"text": "Any good alternative to Google Alerts?", "label": "find_alternative"}
+{"text": "Good wireframing apps?", "label": "none"}
+{"text": "Is there a HTML alternative to Prezi?", "label": "find_alternative"}
+{"text": "Any alternatives to Google Streetview?", "label": "find_alternative"}
+{"text": "Zencoder alternatives?", "label": "find_alternative"}
+{"text": "Alternatives to discontinued Google Calendar Appointment Slots", "label": "find_alternative"}
+{"text": "Q&A Platform similar to Stack Exchange model?", "label": "find_alternative"}
+{"text": "Can I Share/Sync My Picasa Web Albums Automatically to My Facebook Account?", "label": "sync_accounts"}
+{"text": "Sync not export Facebook events with Google Apps calendar", "label": "sync_accounts"}
+{"text": "How do I sync Facebook Twitter & Foursquare?", "label": "sync_accounts"}
+{"text": "Google Calendar not syncing calendars that have been added by URL with Windows 10 Calendar", "label": "sync_accounts"}
+{"text": "Google Contact Synchronization on the iPhone 3G", "label": "sync_accounts"}
+{"text": "Gmail user set up through Google Apps can't change their password", "label": "change_password"}
+{"text": "How do I change my password on ebay?", "label": "change_password"}
+{"text": "Gmail recover password while logged in Iphone", "label": "change_password"}
+{"text": "How to retrieve forgotten Wordpress Admin password", "label": "change_password"}
+{"text": "How to retrieve a stolen Yahoo account's password?", "label": "change_password"}
+{"text": "Users can't reset their passwords anymore on Google Apps?", "label": "change_password"}
+{"text": "Does moving a mail to the IMAP spam folder trains Gmail's spam filter?", "label": "filter_spam"}
+{"text": "How can I auto-delete some spam from Gmail?", "label": "filter_spam"}
+{"text": "When I move spam to my inbox it goes back into the spam again", "label": "filter_spam"}
+{"text": "How to send messages to spam in Gmail filter?", "label": "filter_spam"}
+{"text": "How do I disable the spam filter in Gmail?", "label": "filter_spam"}
+{"text": "How to check your Gmail spam label for good emails", "label": "filter_spam"}
+{"text": "Mark large numbers of messages as \"not spam\"", "label": "filter_spam"}
+{"text": "What are alternatives to Postini for spam filtering?", "label": "filter_spam"}
+{"text": "How to remove spam filter for Google Apps email", "label": "filter_spam"}
+{"text": "Does marking an email as spam in Gmail affect the filter for everyone?", "label": "filter_spam"}
+{"text": "How can I prevent/lessen event spam on Facebook?", "label": "filter_spam"}
+{"text": "Do emails auto-forwarded from one Gmail account to another stop if marked as spam?", "label": "filter_spam"}
+{"text": "Gmail's filter for SPAM folder and/or keywords in multiple fields", "label": "filter_spam"}
+{"text": "Get rid of Russian junk from my Gmail", "label": "filter_spam"}
+{"text": "Embedding stop time in a YouTube video link", "label": "none"}
+{"text": "Is there a catch to PayPal's Premier account type?", "label": "none"}
+{"text": "How can I get OkCupid search to show only matches within 5 miles of me?", "label": "none"}

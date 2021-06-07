@@ -1,0 +1,162 @@
+{"text": "How to record my screen?", "label": "none"}
+{"text": "How can I highlight or annotate PDFs?", "label": "none"}
+{"text": "Is it worth upgrading from 12.04 LTS to 13.04", "label": "make_update"}
+{"text": "Upgrade to 12.04 64 bit", "label": "make_update"}
+{"text": "How to upgrade Ubuntu 14.04.1 to 14.04.2?", "label": "make_update"}
+{"text": "Upgrading from Ubuntu 14.04 to 15.04", "label": "make_update"}
+{"text": "how to upgrade from ubuntu 15.04 to 15.10?", "label": "make_update"}
+{"text": "Upgrade 12.04 to 12.10 using startup disk", "label": "make_update"}
+{"text": "How to Upgrade from 11.10 to 12.04 when you've got a problem?", "label": "make_update"}
+{"text": "Update 11.04 to 12.04 with LiveCD", "label": "make_update"}
+{"text": "How to upgrade Ubuntu 9.10 to 12.10 via terminal?", "label": "make_update"}
+{"text": "How to upgrade from Ubuntu 10.10 to 11.04?", "label": "make_update"}
+{"text": "No matter what I do Ubuntu 15.04 does not recognize HP LaserJet 1020", "label": "setup_printer"}
+{"text": "How to setup HP printer/scanner on ubuntu?", "label": "setup_printer"}
+{"text": "How do I setup my HP C4140 printer wirelessly?", "label": "setup_printer"}
+{"text": "How to setup wireless printing from a printer connected via usb on Ubuntu Server 12.10?", "label": "setup_printer"}
+{"text": "How can I install a Pantum 2502W laser printer on Ubuntu", "label": "setup_printer"}
+{"text": "Install Canon MP560 Ubuntu 15.04", "label": "setup_printer"}
+{"text": "How to install a Brother MFC-5890CN network printer?", "label": "setup_printer"}
+{"text": "How do I install drivers for a Konica Minolta 200?", "label": "setup_printer"}
+{"text": "How do I install drivers for the Panasonic MB1900CX All-in-One Printer/Scanner?", "label": "setup_printer"}
+{"text": "How To Install Canon LBP2900B printer in 14.04 LTS ? I tried the method for LBP2900 but it didnt work", "label": "setup_printer"}
+{"text": "Any command line calculator for Ubuntu?", "label": "software_recommendation"}
+{"text": "Extracting embedded images from a PDF", "label": "software_recommendation"}
+{"text": "What to use to quickly cut Audio/Video", "label": "software_recommendation"}
+{"text": "Torrent client for the command-line?", "label": "none"}
+{"text": "MySQL GUI Tools", "label": "software_recommendation"}
+{"text": "What developer text editors are available for Ubuntu?", "label": "software_recommendation"}
+{"text": "What screenshot tools are available?", "label": "software_recommendation"}
+{"text": "Which programs can I use to edit PDF files?", "label": "software_recommendation"}
+{"text": "Is there a lightweight tool to crop images quickly?", "label": "software_recommendation"}
+{"text": "What IRC clients are available?", "label": "software_recommendation"}
+{"text": "What new games are available for Ubuntu in 2011?", "label": "software_recommendation"}
+{"text": "UPNP / DLNA (client) player recommendations?", "label": "software_recommendation"}
+{"text": "What scientific plotting software is available?", "label": "software_recommendation"}
+{"text": "Can you recommend a password generator?", "label": "software_recommendation"}
+{"text": "What tools do you use to monitor a web server?", "label": "software_recommendation"}
+{"text": "What is a good MongoDB GUI client?", "label": "software_recommendation"}
+{"text": "Password Management Applications?", "label": "software_recommendation"}
+{"text": "Is there an application for reading mobi files?", "label": "software_recommendation"}
+{"text": "shut down without extra question", "label": "shutdown_computer"}
+{"text": "How to shutdown computer when users are logged on?", "label": "shutdown_computer"}
+{"text": "What is the proper terminal-way to shutdown?", "label": "shutdown_computer"}
+{"text": "How can I automatically shutdown the system after a specific time?", "label": "shutdown_computer"}
+{"text": "Hotkey to shut down from login screen?", "label": "shutdown_computer"}
+{"text": "How to shutdown the computer after Xsession ends?", "label": "shutdown_computer"}
+{"text": "How can one shutdown a PC using the keyboard?", "label": "shutdown_computer"}
+{"text": "How can I enable shutdown verbosity?", "label": "shutdown_computer"}
+{"text": "Are there any Keyboard Shortcuts to Shutdown?", "label": "shutdown_computer"}
+{"text": "Shutdown after a certain time", "label": "shutdown_computer"}
+{"text": "Shutdown problem in Ubuntu 16.04", "label": "shutdown_computer"}
+{"text": "How do I fix a shutdown problem?", "label": "shutdown_computer"}
+{"text": "What graphical utility can I use for Ubuntu auto shutdown?", "label": "shutdown_computer"}
+{"text": "What software can I use to view epub documents?", "label": "software_recommendation"}
+{"text": "Which PDF Viewer would you recommend?", "label": "software_recommendation"}
+{"text": "What IDEs are available for Ubuntu?", "label": "software_recommendation"}
+{"text": "What's the best Mind Mapping Software?", "label": "software_recommendation"}
+{"text": "Software to read a QR code?", "label": "software_recommendation"}
+{"text": "PDF to word conversion software?", "label": "software_recommendation"}
+{"text": "Is there software that can view .dwg files?", "label": "software_recommendation"}
+{"text": "What are some good PHP editors?", "label": "software_recommendation"}
+{"text": "Is there a software utility to adjust screen gamma/brightness/contrast?", "label": "software_recommendation"}
+{"text": "Please recommend a hex editor for shell", "label": "software_recommendation"}
+{"text": "Is there LAN topology mapping software available in Ubuntu?", "label": "software_recommendation"}
+{"text": "Is there a tool like wifi analyzer for ubuntu?", "label": "software_recommendation"}
+{"text": "Tool for recovering deleted data from a flash drive", "label": "software_recommendation"}
+{"text": "What's a simple \"colour picker\" app for GNOME?", "label": "software_recommendation"}
+{"text": "Any app that tells me to take regular breaks from working?", "label": "software_recommendation"}
+{"text": "What are some good ASCII art generators?", "label": "software_recommendation"}
+{"text": "What are some good GUI binary viewers/editors?", "label": "software_recommendation"}
+{"text": "Which is the best PDF metadata viewer for Ubuntu?", "label": "software_recommendation"}
+{"text": "Is there a Linux file manager with a proper drop-down tree view? (like finder in OS X)", "label": "software_recommendation"}
+{"text": "Which application do you recommend for watching TV (DVB)?", "label": "software_recommendation"}
+{"text": "What Is The Best HDR Software?", "label": "software_recommendation"}
+{"text": "What do you use to edit Microsoft Word documents (docx)?", "label": "software_recommendation"}
+{"text": "What's the best Wireframing tool?", "label": "software_recommendation"}
+{"text": "Is there any software that will do face recognition in photos?", "label": "software_recommendation"}
+{"text": "Applications to replace iTunes for iPod synchronization?", "label": "software_recommendation"}
+{"text": "Is there an SSH connection manager?", "label": "software_recommendation"}
+{"text": "A light alternative to gnome-system-monitor?", "label": "software_recommendation"}
+{"text": "Software to create a video slideshow?", "label": "software_recommendation"}
+{"text": "Is there a project management software for Ubuntu like Microsoft Project?", "label": "software_recommendation"}
+{"text": "Is there any recovery software available for ext4?", "label": "software_recommendation"}
+{"text": "What blog editor software are available?", "label": "software_recommendation"}
+{"text": "Can you recommend a good modern GUI download manager (wget wrapper?)", "label": "software_recommendation"}
+{"text": "Is there any program for fuzzy string matching which provides a match score?", "label": "software_recommendation"}
+{"text": "Are there any hardware diagnostic tools?", "label": "software_recommendation"}
+{"text": "Recommendation for Regex editor?", "label": "software_recommendation"}
+{"text": "Is there a Document scanning and archiving software?", "label": "none"}
+{"text": "Keyboard shortcut to shutdown?", "label": "shutdown_computer"}
+{"text": "My system doesn't go shutdown", "label": "shutdown_computer"}
+{"text": "How to troubleshoot slow shutdown?", "label": "shutdown_computer"}
+{"text": "How can I shutdown the computer when a certain process ends?", "label": "shutdown_computer"}
+{"text": "Ubuntu Shut down app", "label": "shutdown_computer"}
+{"text": "What does my computer do when I click 'Shut Down'?", "label": "shutdown_computer"}
+{"text": "How do I shut down without the confirmation prompt?", "label": "shutdown_computer"}
+{"text": "No action when shutdown pressed", "label": "shutdown_computer"}
+{"text": "what is the right way to shutdown ubuntu using the command line?", "label": "shutdown_computer"}
+{"text": "How can I make shutdown not require admin password?", "label": "shutdown_computer"}
+{"text": "shutdown in specific way if no-one uses computer", "label": "shutdown_computer"}
+{"text": "What is the command to open the shutdown dialog?", "label": "shutdown_computer"}
+{"text": "How to Shut down Ubuntu by using keyboard?", "label": "shutdown_computer"}
+{"text": "shutdown 5:30pm every day", "label": "shutdown_computer"}
+{"text": "Upgrading from 11.10 to 12.04", "label": "make_update"}
+{"text": "How do I upgrade to the release version of 16.04 if I am running Beta?", "label": "make_update"}
+{"text": "Doubts regarding the 15.04 upgrade (is it inevitable and unavoidable?)", "label": "make_update"}
+{"text": "Is any offline upgrade from 13.10 to 14.04 possible?", "label": "make_update"}
+{"text": "Upgrading from ubuntu 12.04 to 13.10", "label": "make_update"}
+{"text": "Ubuntu upgrade failed", "label": "make_update"}
+{"text": "Upgrading from 12.04 to 13.10 ( Unanswered questions )", "label": "make_update"}
+{"text": "upgrading to Ubuntu 13.10 from Ubuntu 13.04", "label": "make_update"}
+{"text": "Is it recommended to upgrade to Lubuntu 15.04?", "label": "software_recommendation"}
+{"text": "Force upgrade 12.10 to 13.04", "label": "make_update"}
+{"text": "How to partially upgrade Ubuntu 11.10 from Ubuntu 11.04?", "label": "make_update"}
+{"text": "Problem upgrading Ubuntu 9.10", "label": "make_update"}
+{"text": "Is it necessary to upgrade to 15.10 from 14.04?", "label": "make_update"}
+{"text": "How do I update Xubuntu 11.10 to Xubuntu 12.04 LTS?", "label": "make_update"}
+{"text": "Why did the upgrade from 11.10 to 12.04 ruin my system?", "label": "make_update"}
+{"text": "Problems upgrading from 12.04 to 14.04", "label": "make_update"}
+{"text": "Problems upgrading Ubuntu 12.10 to 13.04", "label": "make_update"}
+{"text": "Upgrade from 12.04 to 12.10 without losing files?", "label": "make_update"}
+{"text": "On really old Ubuntu 6.06 - How to upgrade", "label": "software_recommendation"}
+{"text": "Do I need to uninstall 10.04 to upgrade to 12.04?", "label": "make_update"}
+{"text": "Do I need to reinstall everything to upgrade from 13.10 to 14.10?", "label": "make_update"}
+{"text": "update-manager: upgrade to 15.04 rather than 16.04", "label": "make_update"}
+{"text": "Upgrading 16.04 to 16.04.1", "label": "make_update"}
+{"text": "Upgrading Ubuntu Server 9.10 to 10.04", "label": "make_update"}
+{"text": "Ho do I update to 13.04 from the beta?", "label": "make_update"}
+{"text": "How to upgrade from 12.10 to 14.04", "label": "make_update"}
+{"text": "Upgrading from 10.10 to 11.04 how much space is needed?", "label": "make_update"}
+{"text": "Do I need to backup my 12.04 system to upgrade to 12.04.1?", "label": "make_update"}
+{"text": "Cannot upgrade from 12.04LTS to 14.04", "label": "make_update"}
+{"text": "Upgrade 10.10 to 11.04", "label": "make_update"}
+{"text": "How to upgrade from 14.04 LTS or 15.10 to 16.04 from terminal", "label": "make_update"}
+{"text": "How to upgrade from 16.04 LTS to 16.04.1 LTS", "label": "make_update"}
+{"text": "Upgrading from 10.04 to 11.10", "label": "make_update"}
+{"text": "How can i upgrade to Ubuntu 14.04 final from 14.04 Beta correctly?", "label": "make_update"}
+{"text": "Is there an upgrade procedure from 12.04 LTS to 14.04 LTS", "label": "make_update"}
+{"text": "Upgrade from 9.10 to 11.04", "label": "make_update"}
+{"text": "How to upgrade Ubuntu 12.04 to 14.04 if I have dual boot with windows 7?", "label": "make_update"}
+{"text": "Wubi Device /dev/loop0 full. How to get more space?", "label": "software_recommendation"}
+{"text": "Using 12.04 can I compile packages with gcc for 10.04?", "label": "make_update"}
+{"text": "Removing Recently used items in 12.04", "label": "software_recommendation"}
+{"text": "Upgrading From 11.04 (32bit) to 12.04 (64bit)", "label": "make_update"}
+{"text": "How is rm command different from the delete button?", "label": "none"}
+{"text": "In Unity how do I see the details of a given launcher?", "label": "software_recommendation"}
+{"text": "How to provide user permission to read and write on /dev/sdax? What is the syntax?", "label": "none"}
+{"text": "Security enhancements prevent mounting /dev/sdb1", "label": "none"}
+{"text": "How do I show grub when resuming from suspend?", "label": "none"}
+{"text": "How to install a Lexmark z600 series printer?", "label": "setup_printer"}
+{"text": "Cannot setup HP All in one DJ3630", "label": "setup_printer"}
+{"text": "How to add a network printer on Ubuntu 15.10?", "label": "setup_printer"}
+{"text": "Cannot install printer driver epson l210", "label": "setup_printer"}
+{"text": "How do I install Dell 2150cdn printer", "label": "setup_printer"}
+{"text": "Installing Epson XP-424 wireless printer", "label": "setup_printer"}
+{"text": "Installing EPSON L355 on Ubuntu 14.04", "label": "setup_printer"}
+{"text": "How do I install the HP F4280 printer?", "label": "setup_printer"}
+{"text": "How to Install Brother DCP-8110DN Laser Printer on Ubuntu?", "label": "setup_printer"}
+{"text": "How to Install a Canon MF8040Cn Printer on Ubuntu 12.04", "label": "setup_printer"}
+{"text": "How Do I Install Canon MF8000C Printer in Ubuntu 15.10?", "label": "setup_printer"}
+{"text": "How to install Canon LBP330 in Lts 16.04", "label": "setup_printer"}
+{"text": "Install printer Lexmark X4690 (ubuntu 12.04)", "label": "setup_printer"}

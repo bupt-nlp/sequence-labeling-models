@@ -6,7 +6,7 @@ from typing import List, Tuple
 from allennlp.data import Vocabulary, Instance
 from allennlp.data.data_loaders import SimpleDataLoader, DataLoader
 from allennlp.data.token_indexers.pretrained_transformer_indexer import PretrainedTransformerIndexer
-from allennlp.data.dataset_readers.sequence_tagging import SequenceTaggingDatasetReader
+from allennlp.data.dataset_readers.text_classification_json import TextClassificationJsonReader
 from allennlp.models.model import Model
 
 from allennlp.models.simple_tagger import SimpleTagger
@@ -26,8 +26,11 @@ from allennlp.data import (
 )
 from allennlp.data.data_loaders import SimpleDataLoader
 from allennlp.models import Model
+from allennlp.models.basic_classifier import BasicClassifier
+from allennlp.modules.seq2vec_encoders.cls_pooler import ClsPooler
 from allennlp.modules.text_field_embedders import BasicTextFieldEmbedder
 from allennlp.training.optimizers import AdamOptimizer
+
 
 from loguru import logger
 from tap import Tap
@@ -68,29 +71,6 @@ class TaggerTrainer:
         self.model = self.init_model()
         self.trainer = self.init_trainer()
     
-    def init_crf_model(self) -> Model:
-        """init crf tagger model
-        """
-        # 1. import related modules
-        from allennlp
-        bert_text_field_embedder = PretrainedTransformerEmbedder(model_name=self.config.model_name)
-        bert_text_field_embedder
-        tagger = SimpleTagger(
-            vocab=self.vocab,
-            text_field_embedder=BasicTextFieldEmbedder(
-                token_embedders={
-                    'tokens': bert_text_field_embedder
-                }
-            ),
-            encoder=PassThroughEncoder(bert_text_field_embedder.get_output_dim()),
-            verbose_metrics=True,
-            calculate_span_f1=True,
-            label_encoding="BMES",
-        )
-        
-        tagger.to(device=self.config.device)
-        return tagger
-    
     def init_model(self) -> Model:
         """build the model
 
@@ -101,20 +81,15 @@ class TaggerTrainer:
             Model: the final models
         """
         bert_text_field_embedder = PretrainedTransformerEmbedder(model_name=self.config.model_name)
-        bert_text_field_embedder
-        tagger = SimpleTagger(
+        tagger = BasicClassifier(
             vocab=self.vocab,
             text_field_embedder=BasicTextFieldEmbedder(
                 token_embedders={
                     'tokens': bert_text_field_embedder
                 }
             ),
-            encoder=PassThroughEncoder(bert_text_field_embedder.get_output_dim()),
-            verbose_metrics=True,
-            calculate_span_f1=True,
-            label_encoding="BMES",
+            seq2vec_encoder=ClsPooler(embedding_dim=bert_text_field_embedder.get_output_dim()),
         )
-        
         tagger.to(device=self.config.device)
         return tagger
     
