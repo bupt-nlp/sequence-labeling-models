@@ -3,3 +3,4 @@ allennlp-models
 dataclasses-json
 loguru
 typed-argument-parser
+tabulate

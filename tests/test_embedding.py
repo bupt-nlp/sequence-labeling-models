@@ -8,4 +8,3 @@ def test_embedding():
     input_embedding = torch.randn((16, 32, 64))
     embedding = SinusoidalPositionEmbedding()
 
-    
