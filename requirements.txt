@@ -4,3 +4,4 @@ dataclasses-json
 loguru
 typed-argument-parser
 tabulate
+pytorch-crf
