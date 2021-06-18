@@ -8,18 +8,18 @@ from tap import Tap
 
 
 class JointBertConfig(Tap):
-    bert_config: BertConfig
+    bert_config = None
     
-    intent_size: int
-    intent_dropout: float
+    intent_size: int = 2
+    intent_dropout: float = 0.2
 
-    slot_label_size: int
-    slot_dropout: float
-    use_crf: bool
+    slot_label_size: int = 4
+    slot_dropout: float = 0.5
+    use_crf: bool = True
     # scale element for slot loss
-    slot_loss_coef: float
+    slot_loss_coef: float =0.6
     # ignore `O` slot index
-    ignore_index: bool
+    ignore_index: bool = True
 
 class JointBERT(BertPreTrainedModel):
     """JointBERT: Implementation of [BERT for Joint Intent Classification and Slot Filling](https://arxiv.org/abs/1902.10909)
@@ -30,17 +30,17 @@ class JointBERT(BertPreTrainedModel):
         super(JointBERT, self).__init__(config.bert_config)
         self.config: JointBertConfig = config
 
-        self.bert = BertModel(config=config.bert_config)  # Load pretrained bert
+        self.bert: BertModel = BertModel(config=config.bert_config)  # Load pretrained bert
 
-        self.intent_classifier = nn.Sequential([
+        self.intent_classifier = nn.Sequential(
             nn.Dropout(self.config.intent_dropout),
-            nn.Linear(self.bert.get_output_dim(), self.config.intent_size)
-        ])
+            nn.Linear(768, self.config.intent_size)
+        )
 
-        self.slot_classifier = nn.Sequential([
+        self.slot_classifier = nn.Sequential(
             nn.Dropout(self.config.intent_dropout),
-            nn.Linear(self.bert.get_output_dim(), self.config.slot_label_size)
-        ])
+            nn.Linear(768, self.config.slot_label_size)
+        )
 
         if self.config.use_crf:
             self.crf = CRF(num_tags=self.config.slot_label_size, batch_first=True)
@@ -94,7 +94,8 @@ class JointBERT(BertPreTrainedModel):
                 else:
                     slot_loss = slot_loss_fct(slot_logits.view(-1, self.config.slot_label_size), slot_labels_ids.view(-1))
             total_loss += self.config.slot_loss_coef * slot_loss
-
-        outputs = ((intent_logits, slot_logits),) + outputs[2:]  # add hidden states and attention if they are here
-        outputs = (total_loss,) + outputs
-        return outputs  # (loss), logits, (hidden_states), (attentions) # Logits is a tuple of intent and slot logits
+        return {
+            "loss": total_loss,
+            "intent_logits": intent_logits,
+            "slot_logits": slot_logits
+        }
